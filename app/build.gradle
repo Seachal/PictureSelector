@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion cfgs.compileSdkVersion
+    buildToolsVersion  "27.0.3"
 
     defaultConfig {
         applicationId "com.luck.pictureselector"
