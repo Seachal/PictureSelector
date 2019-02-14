@@ -21,4 +21,26 @@
         android:layout_marginTop="10dp"
         android:text="Fragment"
         android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_zxing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_fragment"
+        android:layout_marginTop="10dp"
+        android:text="bga-zxing"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_simple_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_zxing"
+        android:layout_marginTop="10dp"
+        android:text="btn_simple_activity"
+        android:textAllCaps="false" />
+
+
 </RelativeLayout>

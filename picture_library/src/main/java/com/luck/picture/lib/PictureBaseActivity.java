@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.luck.picture.lib.compress.Luban;
 import com.luck.picture.lib.compress.OnCompressListener;
@@ -438,6 +439,7 @@ public class PictureBaseActivity extends FragmentActivity {
         Intent intent = PictureSelector.putIntentResult(images);
         setResult(RESULT_OK, intent);
         closeActivity();
+        Log.i("PictureSelectorActivity", "okClose"+System.currentTimeMillis());
     }
 
     /**

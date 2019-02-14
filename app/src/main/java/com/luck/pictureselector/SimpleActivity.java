@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class SimpleActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btn_activity, btn_fragment;
+    private Button btn_activity, btn_fragment, btn_zxing ,btn_simple_activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +15,12 @@ public class SimpleActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_other);
         btn_activity = (Button) findViewById(R.id.btn_activity);
         btn_fragment = (Button) findViewById(R.id.btn_fragment);
+        btn_zxing = findViewById(R.id.btn_zxing);
+        btn_simple_activity = findViewById(R.id.btn_simple_activity);
         btn_activity.setOnClickListener(this);
         btn_fragment.setOnClickListener(this);
+        btn_zxing.setOnClickListener(this);
+        btn_simple_activity.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +35,17 @@ public class SimpleActivity extends AppCompatActivity implements View.OnClickLis
                 intent = new Intent(SimpleActivity.this, PhotoFragmentActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.btn_zxing:
+                intent = new Intent(SimpleActivity.this, ScanBarCodeActivity.class);
+                startActivity(intent);
+             break;
+            case R.id.btn_simple_activity:
+                intent = new Intent(SimpleActivity.this, SimpleViewActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+
         }
     }
 }

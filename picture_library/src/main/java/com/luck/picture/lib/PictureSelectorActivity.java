@@ -835,6 +835,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
 
 
     public void startResultActivity(List<LocalMedia> previewImages, int position) {
+        mHandler.sendEmptyMessage(SHOW_DIALOG);
         LocalMedia media = previewImages.get(position);
         String pictureType = media.getPictureType();
         Bundle bundle = new Bundle();
@@ -874,6 +875,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
                 }
                 break;
         }
+        mHandler.sendEmptyMessage(DISMISS_DIALOG);
     }
 
     /**

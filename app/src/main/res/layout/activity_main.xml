@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    tools:context="com.luck.pictureselector.MainActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="com.luck.pictureselector.MainActivity">
 
     <RelativeLayout
         android:id="@+id/rl_title"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/bar_grey">
+        android:background="@color/bar_grey"
+        android:baselineAligned="false">
 
         <ImageView
             android:id="@+id/left_back"
@@ -21,7 +22,7 @@
             android:background="@color/transparent"
             android:padding="15dp"
             android:src="@drawable/picture_back"
-            android:visibility="visible" />
+            android:visibility="visible"/>
 
         <TextView
             android:id="@+id/tv_title"
@@ -33,7 +34,7 @@
             android:maxEms="11"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/tv_right"
@@ -45,7 +46,7 @@
             android:gravity="center"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="15sp"/>
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
@@ -54,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
-        android:overScrollMode="never" />
+        android:overScrollMode="never"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -66,7 +67,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/layout_number" />
+            <include layout="@layout/layout_number"/>
 
             <RadioGroup
                 android:id="@+id/rgb_style"
@@ -82,7 +83,7 @@
                     android:checked="true"
                     android:text="默认样式"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_white_style"
@@ -90,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:text="样式一"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_num_style"
@@ -98,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:text="样式二"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_sina_style"
@@ -106,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:text="样式三"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
             </RadioGroup>
 
@@ -117,7 +118,7 @@
                 android:gravity="center_vertical"
                 android:text="是否开启点击声音"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <RadioGroup
                 android:id="@+id/rgb_photo_mode"
@@ -133,7 +134,7 @@
                     android:checked="true"
                     android:text="全部"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_image"
@@ -142,7 +143,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="图片"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_video"
@@ -151,7 +152,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="视频"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_audio"
@@ -160,7 +161,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="音频"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
             </RadioGroup>
 
 
@@ -172,7 +173,7 @@
                 android:gravity="center_vertical"
                 android:text="相册or单独拍照"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <CheckBox
                 android:id="@+id/cb_choose_mode"
@@ -182,7 +183,7 @@
                 android:gravity="center_vertical"
                 android:text="单选or多选"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <CheckBox
                 android:id="@+id/cb_isCamera"
@@ -192,7 +193,7 @@
                 android:gravity="center_vertical"
                 android:text="显示or隐藏拍摄"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
 
             <CheckBox
@@ -202,7 +203,7 @@
                 android:gravity="center_vertical"
                 android:text="是否显示Gif图片"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <CheckBox
                 android:id="@+id/cb_preview_img"
@@ -212,7 +213,7 @@
                 android:gravity="center_vertical"
                 android:text="是否预览图片"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <CheckBox
                 android:id="@+id/cb_preview_video"
@@ -222,7 +223,7 @@
                 android:gravity="center_vertical"
                 android:text="是否预览视频"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <CheckBox
                 android:id="@+id/cb_preview_audio"
@@ -233,7 +234,7 @@
                 android:text="是否预览音频"
                 android:textColor="@color/color_53"
                 android:textSize="14sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <CheckBox
                 android:id="@+id/cb_compress"
@@ -242,7 +243,7 @@
                 android:gravity="center_vertical"
                 android:text="是否压缩图片"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <CheckBox
                 android:id="@+id/cb_crop"
@@ -251,7 +252,7 @@
                 android:gravity="center_vertical"
                 android:text="是否裁剪图片"
                 android:textColor="@color/color_53"
-                android:textSize="14sp" />
+                android:textSize="14sp"/>
 
             <RadioGroup
                 android:id="@+id/rgb_crop"
@@ -268,7 +269,7 @@
                     android:checked="true"
                     android:text="默认"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_crop_1to1"
@@ -277,7 +278,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="1:1"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_crop_3to4"
@@ -286,7 +287,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="3:4"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_crop_3to2"
@@ -295,7 +296,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="3:2"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/rb_crop_16to9"
@@ -304,7 +305,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="16:9"
                     android:textColor="@color/color_53"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
             </RadioGroup>
 
@@ -316,7 +317,7 @@
                 android:text="圆形头像裁剪模式"
                 android:textColor="@color/color_53"
                 android:textSize="14sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
 
             <CheckBox
@@ -328,7 +329,7 @@
                 android:text="是否显示裁剪框网格"
                 android:textColor="@color/color_53"
                 android:textSize="14sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <CheckBox
                 android:id="@+id/cb_showCropFrame"
@@ -339,7 +340,7 @@
                 android:text="是否显示裁剪边框"
                 android:textColor="@color/color_53"
                 android:textSize="14sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <CheckBox
                 android:id="@+id/cb_styleCrop"
@@ -349,7 +350,7 @@
                 android:text="裁剪框or图片拖动"
                 android:textColor="@color/color_53"
                 android:textSize="14sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <CheckBox
                 android:id="@+id/cb_hide"
@@ -359,7 +360,7 @@
                 android:text="是否显示裁剪菜单栏"
                 android:textColor="@color/color_53"
                 android:textSize="14sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
